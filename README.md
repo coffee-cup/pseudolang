@@ -1,6 +1,6 @@
 # Pseudolang
 
-A forgiving programming _language_ that allows you to write code in any
+A forgiving programming _compiler_ that allows you to write code in any
 pseudocode style that you want. The only downside is that it costs money to run
 and it is super slow. Oh, and the code is not guaranteed to be correct.
 
