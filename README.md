@@ -53,68 +53,9 @@ Note: Interpreter functionality is currently in development.
 
 ## Development
 
-### Building
-
-Build the project:
-
-```bash
-mise run build
-```
-
-The binary will be created at `out/pseudolang`.
-
-### Testing
-
-Run tests:
-
-```bash
-mise run test
-```
-
-### Code Quality
-
-Check code with linters and formatters:
-
-```bash
-mise run check
-```
-
-Use this after making significant changes.
-
-### Tidy Dependencies
-
-Clean up Go module dependencies:
-
-```bash
-mise run tidy
-```
-
-### Project Structure
-
-```
-pseudolang/
-├── cmd/pseudolang/       # Main entry point
-│   └── main.go
-├── internal/
-│   ├── commands/         # CLI command implementations
-│   │   ├── model.go      # Model switching command
-│   │   ├── provider.go   # Provider configuration command
-│   │   ├── run.go        # Run interpreter command
-│   │   └── exec.go       # Execute code command
-│   └── config/           # Configuration management
-│       ├── config.go     # Config file handling
-│       └── models.go     # Model-to-provider mapping
-└── mise.toml             # Build configuration
-```
-
-### Running During Development
-
-Instead of building, you can run directly:
-
-```bash
-go run cmd/pseudolang/main.go <command> [args]
-```
-
-### Configuration Location
+- `mise run build`: Build the project (outputs to `out/ps`)
+- `mise run test`: Run tests
+- `mise run check`: Check code with linters and formatters
+- `mise run tidy`: Clean up Go module dependencies
 
 Configuration is stored at `~/.config/pseudolang/config.json`.
