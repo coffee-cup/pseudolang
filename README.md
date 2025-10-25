@@ -23,6 +23,7 @@ pseudo run tests/quicksort.pseudo
 ## Installation
 
 - Checkout repo
+- Install packages with `mise install`
 - Run `mise run build` to build the project
 - `./out/pseudo --help` to see the available commands
 
