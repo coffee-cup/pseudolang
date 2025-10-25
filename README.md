@@ -13,10 +13,9 @@ and it is super slow. Oh, and the code is not guaranteed to be correct.
 # Set the active model to Claude Haiku 4.5 and provide your API token.
 pseudo model claude-haiku-4-5-20251001 --token sk-ant-...
 
-# Execute some psudocode
-# Use any pseudocode style you want.
-pseudo exec "print('Hello, world!')"
-pseudo exec "cout << 'Hello, world!\n'"
+# Execute some psudocode in any style
+pseudo exec "let nums = [3,1,4,1,5,9,2,6]; filter nums where x>3 AND sort them THEN print"
+# [4, 5, 6, 9]
 
 # Execute a file
 pseudo run tests/quicksort.pseudo
