@@ -1,8 +1,8 @@
 # Pseudolang
 
-A forgiving programming _compiler_ that allows you to write code in any
-pseudocode style that you want. The only downside is that it costs money to run
-and it is super slow. Oh, and the code is not guaranteed to be correct.
+A forgiving _compiler_ that allows you to write code in any pseudocode style
+that you want. The only downside is that it costs money to run and it is super
+slow. Oh, and the code is not guaranteed to be correct.
 
 <img width="829" height="575" alt="screenshot-2025-10-25-03 14 49" src="https://github.com/user-attachments/assets/45a6da00-6402-42be-b0d9-190232a6022c" />
 
