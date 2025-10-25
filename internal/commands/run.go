@@ -3,8 +3,10 @@ package commands
 import (
 	"context"
 	"fmt"
+	"os"
 
 	"github.com/urfave/cli/v3"
+	"github.com/username/pseudolang/internal/core"
 )
 
 var RunCommand = &cli.Command{
@@ -20,8 +22,10 @@ func runAction(ctx context.Context, cmd *cli.Command) error {
 		return fmt.Errorf("file path is required")
 	}
 
-	// TODO: Implement file execution logic
-	fmt.Printf("Running file: %s\n", filePath)
+	content, err := os.ReadFile(filePath)
+	if err != nil {
+		return fmt.Errorf("failed to read file: %w", err)
+	}
 
-	return nil
+	return core.ExecuteWithLLM(ctx, string(content))
 }

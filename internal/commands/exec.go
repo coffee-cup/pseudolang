@@ -3,8 +3,10 @@ package commands
 import (
 	"context"
 	"fmt"
+	"strings"
 
 	"github.com/urfave/cli/v3"
+	"github.com/username/pseudolang/internal/core"
 )
 
 var ExecCommand = &cli.Command{
@@ -15,13 +17,12 @@ var ExecCommand = &cli.Command{
 }
 
 func execAction(ctx context.Context, cmd *cli.Command) error {
-	code := cmd.Args().First()
-	if code == "" {
-		return fmt.Errorf("code string is required")
+	args := cmd.Args().Slice()
+	if len(args) == 0 {
+		return fmt.Errorf("input string is required")
 	}
 
-	// TODO: Implement string execution logic
-	fmt.Printf("Executing: %s\n", code)
+	userInput := strings.Join(args, " ")
 
-	return nil
+	return core.ExecuteWithLLM(ctx, userInput)
 }
