@@ -4,16 +4,6 @@ A command-line interpreter for the pseudolang language with integrated LLM provi
 
 ## Usage
 
-### Installation
-
-Build the project using mise:
-
-```bash
-mise run build
-```
-
-The binary will be output to `out/ps`. The shorthand command is `ps`.
-
 ### Configuring Providers
 
 Before using LLM features, configure API tokens for your providers:
