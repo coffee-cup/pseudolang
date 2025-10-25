@@ -35,8 +35,8 @@ The shorthand command name for the interpreter is `ps`.
 - `ps provider <provider> <token>`: Set API token for a provider
 - `ps model <model>`: Switch to a model (auto-detects provider)
 - `ps model <model> --token <token>`: Set model and token in one command
-- `ps run <file>`: Run a pseudolang file (TODO)
-- `ps exec <code>`: Execute pseudolang code (TODO)
+- `ps run <file>`: Run a pseudolang file
+- `ps exec <code>`: Execute pseudolang code
 
 ## Notes
 
