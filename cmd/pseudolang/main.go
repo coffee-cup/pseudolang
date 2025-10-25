@@ -17,6 +17,8 @@ func main() {
 		Commands: []*cli.Command{
 			commands.RunCommand,
 			commands.ExecCommand,
+			commands.ModelCommand,
+			commands.ProviderCommand,
 		},
 	}
 

@@ -1,6 +1,15 @@
 [tools]
 go = "1.25"
+golangci-lint = "2.5"
 
 [tasks]
 tidy = "go mod tidy"
-build = "go build -o out/pseudolang ./cmd/pseudolang"
+build = "go build -o out/ps ./cmd/pseudolang"
+run = "rm -rf out"
+test = "go test ./..."
+
+check = """
+go vet ./...
+go fmt ./...
+golangci-lint run
+"""
