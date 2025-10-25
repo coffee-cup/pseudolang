@@ -4,8 +4,7 @@ A forgiving programming _language_ that allows you to write code in any
 pseudocode style that you want. The only downside is that it costs money to run
 and it is super slow. Oh, and the code is not guaranteed to be correct.
 
-<img width="792" height="608" alt="screenshot-2025-10-25-03 03 01" src="https://github.com/user-attachments/assets/b1063a2a-0096-407a-beb0-5e5cbc61ec55" />
-
+<img width="829" height="575" alt="screenshot-2025-10-25-03 14 49" src="https://github.com/user-attachments/assets/45a6da00-6402-42be-b0d9-190232a6022c" />
 
 ## Usage
 
@@ -14,8 +13,8 @@ and it is super slow. Oh, and the code is not guaranteed to be correct.
 pseudo model claude-haiku-4-5-20251001 --token sk-ant-...
 
 # Execute some psudocode in any style
-pseudo exec "let nums = [3,1,4,1,5,9,2,6]; filter nums where x>3 AND sort them THEN print"
-# [4, 5, 6, 9]
+pseudo exec "let x = sort([5,2,8,1,9]); filter x where n > 4 then print"
+# [5, 8, 9]
 
 # Execute a file
 pseudo run tests/quicksort.pseudo
