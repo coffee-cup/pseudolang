@@ -4,7 +4,7 @@ A forgiving programming _language_ that allows you to write code in any
 pseudocode style that you want. The only downside is that it costs money to run
 and it is super slow. Oh, and the code is not guaranteed to be correct.
 
-<img width="1002" height="690" alt="screenshot-2025-10-25-03 13 57" src="https://github.com/user-attachments/assets/baf5a830-74ff-4e3f-8462-9262db5f20de" />
+<img width="829" height="575" alt="screenshot-2025-10-25-03 14 49" src="https://github.com/user-attachments/assets/45a6da00-6402-42be-b0d9-190232a6022c" />
 
 ## Usage
 
