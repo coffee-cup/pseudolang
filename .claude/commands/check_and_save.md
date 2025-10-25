@@ -4,4 +4,4 @@ Run `mise run check` to check the code. Fix any issues and run the check again u
 
 Run `mise run test` to run the tests. Fix any issues and run the tests again until they pass.
 
-Once the test passes, commit ALL changes to the repository.
+Once the test passes, commit ALL changes to the repository. Don't ever delete any code or restore files.

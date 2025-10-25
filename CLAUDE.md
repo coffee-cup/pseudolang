@@ -28,15 +28,15 @@ urfave/cli/v3 with integrated LLM provider management.
 The interpreter logic itself is not yet implemented. The LLM provider/model
 configuration system is fully functional.
 
-The shorthand command name for the interpreter is `ps`.
+The shorthand command name for the interpreter is `pseudo`.
 
 ### Commands
 
-- `ps provider <provider> <token>`: Set API token for a provider
-- `ps model <model>`: Switch to a model (auto-detects provider)
-- `ps model <model> --token <token>`: Set model and token in one command
-- `ps run <file>`: Run a pseudolang file
-- `ps exec <code>`: Execute pseudolang code
+- `pseudo provider <provider> <token>`: Set API token for a provider
+- `pseudo model <model>`: Switch to a model (auto-detects provider)
+- `pseudo model <model> --token <token>`: Set model and token in one command
+- `pseudo run <file>`: Run a pseudolang file
+- `pseudo exec <code>`: Execute pseudolang code
 
 ## Notes
 

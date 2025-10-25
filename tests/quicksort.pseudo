@@ -1,0 +1,8 @@
+function quicksort(xs):
+    if xs.length <= 1: return xs
+    let pivot = xs[0]
+    let less = [ x for x in xs[1:] if x <= pivot ]
+    let greater = [ x for x in xs[1:] if x > pivot ]
+    return quicksort(less) + [pivot] + quicksort(greater)
+
+print( quicksort([4, 5, 2, 6]) )  // [2, 4, 5, 6]

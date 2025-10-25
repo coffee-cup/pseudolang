@@ -31,7 +31,7 @@ func ExecuteWithLLM(ctx context.Context, input string, verbose bool) error {
 		gollm.SetProvider(cfg.ActiveProvider),
 		gollm.SetModel(cfg.ActiveModel),
 		gollm.SetAPIKey(token),
-		gollm.SetMaxTokens(1000),
+		gollm.SetMaxTokens(10000),
 	)
 	if err != nil {
 		return fmt.Errorf("failed to initialize LLM: %w", err)
