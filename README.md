@@ -10,7 +10,7 @@ and it is super slow. Oh, and the code is not guaranteed to be correct.
 ## Usage
 
 ```bash
-# Set the active model to Claude Haiku 4.5. Provide your API token.
+# Set the active model to Claude Haiku 4.5 and provide your API token.
 pseudo model claude-haiku-4-5-20251001 --token sk-ant-...
 
 # Execute some psudocode
