@@ -52,8 +52,6 @@ pseudo exec <code>    # Execute pseudolang code directly
 Verbose mode can be enabled with the `--verbose` flag. This will print the
 generated Python code before execution.
 
-\_
-
 ## Development
 
 - `mise run build`: Build the project (outputs to `out/ps`)
