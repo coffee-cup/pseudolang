@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: ['**']
+
+jobs:
+  check-and-build:
+    name: Check and Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+
+      - name: Run checks
+        run: mise run check
+
+      - name: Build project
+        run: mise run build
