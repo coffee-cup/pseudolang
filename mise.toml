@@ -5,7 +5,7 @@ python = "3.13"
 
 [tasks]
 tidy = "go mod tidy"
-build = "go build -o out/ps ./cmd/pseudolang"
+build = "go build -o out/pseudo ./cmd/pseudolang"
 run = "rm -rf out"
 test = "go test ./..."
 
