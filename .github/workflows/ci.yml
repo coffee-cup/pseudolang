@@ -6,7 +6,7 @@ on:
 
 jobs:
   check-and-build:
-    name: Check and Build
+    name: Check, Build, and Test
     runs-on: ubuntu-latest
 
     steps:
