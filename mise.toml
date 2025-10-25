@@ -1,0 +1,6 @@
+[tools]
+go = "1.25"
+
+[tasks]
+tidy = "go mod tidy"
+build = "go build -o out/pseudolang ./cmd/pseudolang"
