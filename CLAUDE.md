@@ -42,3 +42,4 @@ The shorthand command name for the interpreter is `ps`.
 
 - Lookup the latest library documentation using context7
 - When running the code, prefer to use `go run cmd/pseudolang/main.go` instead of building the binary.
+- Store all pseudolang tests in the `tests/` directory.

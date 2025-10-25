@@ -37,8 +37,7 @@ func ExecuteWithLLM(ctx context.Context, input string) error {
 		return fmt.Errorf("failed to initialize LLM: %w", err)
 	}
 
-	systemPrompt := "you are a robot. respond like one"
-	promptText := fmt.Sprintf("%s\n\nquery: %s", systemPrompt, input)
+	promptText := BuildPseudocodePrompt(input)
 
 	prompt := gollm.NewPrompt(promptText)
 
@@ -47,7 +46,10 @@ func ExecuteWithLLM(ctx context.Context, input string) error {
 		return fmt.Errorf("failed to generate response: %w", err)
 	}
 
-	fmt.Println(response)
+	pythonCode, err := ExtractPythonCode(response)
+	if err != nil {
+		return fmt.Errorf("failed to extract Python code: %w", err)
+	}
 
-	return nil
+	return ExecutePythonCode(ctx, pythonCode)
 }
