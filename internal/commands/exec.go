@@ -13,7 +13,14 @@ var ExecCommand = &cli.Command{
 	Name:      "exec",
 	Usage:     "Execute a pseudolang string",
 	ArgsUsage: "<string>",
-	Action:    execAction,
+	Flags: []cli.Flag{
+		&cli.BoolFlag{
+			Name:    "verbose",
+			Aliases: []string{"v"},
+			Usage:   "Print the generated Python code before execution",
+		},
+	},
+	Action: execAction,
 }
 
 func execAction(ctx context.Context, cmd *cli.Command) error {
@@ -24,5 +31,6 @@ func execAction(ctx context.Context, cmd *cli.Command) error {
 
 	userInput := strings.Join(args, " ")
 
-	return core.ExecuteWithLLM(ctx, userInput)
+	verbose := cmd.Bool("verbose")
+	return core.ExecuteWithLLM(ctx, userInput, verbose)
 }

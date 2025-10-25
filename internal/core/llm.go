@@ -8,7 +8,7 @@ import (
 	"github.com/username/pseudolang/internal/config"
 )
 
-func ExecuteWithLLM(ctx context.Context, input string) error {
+func ExecuteWithLLM(ctx context.Context, input string, verbose bool) error {
 	cfg, err := config.Load()
 	if err != nil {
 		return fmt.Errorf("failed to load config: %w", err)
@@ -49,6 +49,13 @@ func ExecuteWithLLM(ctx context.Context, input string) error {
 	pythonCode, err := ExtractPythonCode(response)
 	if err != nil {
 		return fmt.Errorf("failed to extract Python code: %w", err)
+	}
+
+	if verbose {
+		fmt.Println("--- Generated Python Code ---")
+		fmt.Println(pythonCode)
+		fmt.Println("--- End Generated Python Code ---")
+		fmt.Println()
 	}
 
 	return ExecutePythonCode(ctx, pythonCode)
