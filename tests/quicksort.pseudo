@@ -5,4 +5,4 @@ function quicksort(xs):
     let greater = [ x for x in xs[1:] if x > pivot ]
     return quicksort(less) + [pivot] + quicksort(greater)
 
-print( quicksort([4, 5, 2, 6]) )  // [2, 4, 5, 6]
+print( quicksort([73, 15, 42, 87, 3, 94, 58, 21, 61, 37]) )
