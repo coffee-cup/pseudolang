@@ -4,6 +4,9 @@ A forgiving programming _language_ that allows you to write code in any
 pseudocode style that you want. The only downside is that it costs money to run
 and it is super slow. Oh, and the code is not guaranteed to be correct.
 
+<img width="792" height="608" alt="screenshot-2025-10-25-03 03 01" src="https://github.com/user-attachments/assets/b1063a2a-0096-407a-beb0-5e5cbc61ec55" />
+
+
 ## Usage
 
 ```bash
